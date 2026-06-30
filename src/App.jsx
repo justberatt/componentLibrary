@@ -1,13 +1,15 @@
-import './App.css'
-import Button from './components/Button/Button'
+import "./App.css";
+import Menu from "./components/Menu/Menu";
 
 function App() {
-
   return (
     <main>
-      <Button variant='danger'>Log in with Google</Button>
+      <Menu
+        buttonText="Sports"
+        items={["Tennis", "Racquetball", "Pickleball", "Squash"]}
+      />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
