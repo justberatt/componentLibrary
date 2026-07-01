@@ -1,13 +1,17 @@
 import "./App.css";
 import Menu from "./components/Menu/Menu";
+import MenuButton from "./components/Menu/MenuButton";
+import MenuDropdown from "./components/Menu/MenuDropdown";
 
 function App() {
+  const sports = ["Tennis", "Racquetball", "Pickleball", "Squash"];
+
   return (
     <main>
-      <Menu
-        buttonText="Sports"
-        items={["Tennis", "Racquetball", "Pickleball", "Squash"]}
-      />
+      <Menu>
+        <MenuButton>Sports</MenuButton>
+        <MenuDropdown items={sports} />
+      </Menu>
     </main>
   );
 }
