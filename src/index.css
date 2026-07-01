@@ -3,18 +3,14 @@
 }
 
 body {
+  background-color: #2f2f2f;
+  height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #292929;
-}
-
-main {
-  height: 100vh;
-  width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-top: 40px;
+  font-family: Inter;
 }
 
 button {
@@ -31,31 +27,35 @@ button {
   align-items: center;
 }
 
+button:focus {
+  outline: none;
+}
+
 button.button-sm {
   padding: 7px 11px;
   font-size: 12px;
 }
 
 button.button-lg {
-  padding: 30px 40px;
+  padding: 13px 25px;
 }
 
 button.button-success {
-  border: 1px solid #047857;
   color: #047857;
   background-color: #ecfdf5;
+  border-color: #047857;
 }
 
 button.button-warning {
-  border: 1px solid #fbbf24;
   color: #fbbf24;
   background-color: #fffbeb;
+  border-color: #fbbf24;
 }
 
 button.button-danger {
-  border: 1px solid #f87171;
   color: #f87171;
   background-color: #fef2f2;
+  border-color: #f87171;
 }
 
 .menu {
