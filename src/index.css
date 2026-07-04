@@ -95,3 +95,19 @@ button.button-danger {
 .menu-item:not(:last-child) {
   border-bottom: 1px solid #6b7280;
 }
+
+hr {
+  width: 100%;
+}
+
+.star {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  user-select: none;
+}
+
+.star.filled {
+  color: orange;
+}

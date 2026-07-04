@@ -1,12 +1,9 @@
-import { useContext } from "react";
-import { MenuContext } from "./Menu";
-export default function MenuDropdown({ children }) {
-  const { open, menuId } = useContext(MenuContext);
+import Toggle from "../HeadlessToggle/index";
+
+export default function MenuDropdow({ children }) {
   return (
-    open && (
-      <div className="menu-dropdown" id={menuId}>
-        {children}
-      </div>
-    )
+    <Toggle.On>
+      <div className="menu-dropdown">{children}</div>
+    </Toggle.On>
   );
 }
