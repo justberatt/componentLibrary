@@ -1,23 +1,13 @@
 import "./App.css";
 import Menu from "./components/Menu/index";
-import Toggle from "./components/HeadlessToggle/index";
-import { BsStar, BsStarFill } from "react-icons/bs";
+import Star from "./components/Star";
 
 function App() {
   const sports = ["Tennis", "Racquetball", "Pickleball", "Squash"];
 
   return (
     <>
-      <Toggle>
-        <Toggle.Button>
-          <Toggle.On>
-            <BsStarFill className="star filled" />
-          </Toggle.On>
-          <Toggle.Off>
-            <BsStar className="star" />
-          </Toggle.Off>
-        </Toggle.Button>
-      </Toggle>
+      <Star />
 
       <br />
       <hr />
