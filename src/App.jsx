@@ -3,8 +3,6 @@ import Menu from "./components/Menu/index";
 import Star from "./components/Star";
 
 function App() {
-  const sports = ["Tennis", "Racquetball", "Pickleball", "Squash"];
-
   return (
     <>
       <Star
@@ -23,9 +21,10 @@ function App() {
       >
         <Menu.Button>Sports</Menu.Button>
         <Menu.Dropdown>
-          {sports.map((sport) => (
-            <Menu.Item key={sport}>{sport}</Menu.Item>
-          ))}
+          <Menu.Item>Home</Menu.Item>
+          <Menu.Item>About</Menu.Item>
+          <Menu.Item>Contact</Menu.Item>
+          <Menu.Item>Blog</Menu.Item>
         </Menu.Dropdown>
       </Menu>
     </>
