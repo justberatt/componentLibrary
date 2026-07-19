@@ -7,12 +7,20 @@ function App() {
 
   return (
     <>
-      <Star />
+      <Star
+        onChange={() => {
+          console.log("Star Toggled");
+        }}
+      />
 
       <br />
       <hr />
       <br />
-      <Menu>
+      <Menu
+        onOpen={() => {
+          console.log("Menu Toggled");
+        }}
+      >
         <Menu.Button>Sports</Menu.Button>
         <Menu.Dropdown>
           {sports.map((sport) => (
